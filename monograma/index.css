@@ -1,0 +1,100 @@
+/*reinicio básico*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 95vh;
+    background-image: url('./imagenes/cabecera.jpg');
+    background-position: top;
+    position: relative; 
+}
+.containerNav{
+    display: inline;
+    cursor: pointer;
+}
+.nav{
+    /*con positon consigo que se baje la barra*/
+    background-color: #1a2456;
+    position: absolute; /* Cambia la posición a absoluta */
+    top: 20px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    left: 20px; /* Ajusta la distancia desde la izquierda según tus necesidades */
+    right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+    z-index: 1;
+    padding: 10px; 
+    height:46px;
+    display: flex;
+    align-items: center;  
+    color: #f0efed; 
+    text-transform: uppercase;    
+}
+.logoBox{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.logo{
+    height: 35px;
+    filter: invert(1);
+}
+.logoCesta{
+    height: 20px;
+    filter: invert(1);
+    margin-right: 10px;
+}
+.contenidoFlex{
+    display: flex; 
+    align-items: center;
+}
+.textLogo{
+    margin-left: 41px;
+    padding-top:30 px;
+}
+.menuNav{
+    z-index: 2;
+    /*alinea a la derecha*/
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;    
+}
+.separaciónMenuNav{
+    margin-right: 20px;
+}
+.fijar{
+    margin-top: 3px;
+}
+.textBox{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #f0efed; 
+    transform: translate(-50%, -50%);
+}
+.spacingBox{
+    margin-bottom: 15px;
+}
+.headerMain{
+    margin-left: 15px;
+}
+.headingPrimaryMain{
+    display: block;
+    text-transform: uppercase;  
+    font-size: 40px;
+    letter-spacing: 9px;
+    
+}
+.headingPrimarySub{
+    display: block;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+.containerArrow{
+    position: absolute;
+    bottom: 15px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
